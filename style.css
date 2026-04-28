@@ -203,7 +203,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     text-align: center;
     color: var(--white);
-    padding-top: 80px; /* Space for navbar */
+    padding-top: 100px; /* Space for navbar */
 }
 
 .hero-overlay {
@@ -495,16 +495,34 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0;
         max-height: 0;
         overflow: hidden;
-        box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
         transition: max-height 0.4s ease, padding 0.4s ease;
         gap: 0;
         text-align: center;
+        border-top: 1px solid #eee;
     }
     
     .nav-links.active {
         max-height: 400px;
-        padding: 20px 0;
-        gap: 20px;
+        padding: 15px 0;
+        gap: 5px;
+    }
+    
+    .nav-links li {
+        width: 100%;
+    }
+    
+    .nav-links a {
+        display: block;
+        padding: 12px 20px;
+        font-size: 1.1rem;
+    }
+    
+    .nav-links .btn-primary {
+        display: inline-block;
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+        padding: 12px 0;
     }
     
     .menu-toggle {
