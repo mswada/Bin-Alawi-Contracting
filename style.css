@@ -25,6 +25,7 @@ Black / White
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -32,6 +33,8 @@ body {
     color: var(--text-color);
     background-color: var(--white);
     line-height: 1.6;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 a {
@@ -530,7 +533,13 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+        padding: 0 10px;
     }
     
     .hero-buttons {
